@@ -117,23 +117,23 @@ li:hover{
     }
     .hamb.isactive{
         transform: translateY(5px);
-        transition: 0.5s ease-out;
+        transition: 0.4s ease-out;
     }
     .isactive > .ham-lines{
         background-color: #F2F2F2;
     }
     .isactive > .line2{
        opacity: 0;
-       transition: 1s ease-out;
+       transition: 0.7s ease-out;
        display: none;
     }
     .isactive > .line1{
         transform: rotateZ(50deg);
-        transition: 1s ease-out;
+        transition: 0.7s ease-out;
     }
     .isactive > .line3{
         transform: rotateZ(-50deg) translateX(5px) translateY(-4px);
-        transition: 1s ease-out;
+        transition: 0.7s ease-out;
     }
     .ham-lines{
         margin-top: 5px;
@@ -258,7 +258,7 @@ input:focus{
 }
 .card:hover{
     background: #FFFFFF;
-    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.25);
     border-radius: 24px;
     transition: 0.7s;
 }
@@ -325,6 +325,14 @@ input:focus{
     font-size: 1.6rem;
     line-height: 24px;
     color: #828282;
+}
+#email{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #100E1D;
 }
 /* our works */
 .our-works-container{
@@ -416,6 +424,7 @@ input:focus{
     gap: 20px;
 }
 .climg{
+    width: 100%;
     border-radius: 24px;
 }
 .client2{
@@ -492,4 +501,158 @@ input:focus{
 }
 .footer-label{
     color: #F2F2F2;
+}
+
+.footer-box{
+    padding-right: 4px;
+}
+
+
+@media(max-width:600px){
+    /* hero */
+    .home{
+        margin-bottom: 100px;
+    }
+    .head1{
+        font-size: 1.2rem;
+    }
+    .head2{
+        font-size: 2.4rem;
+        line-height: 36px;
+    }
+    .hero-container{
+        margin: 5% 10%;
+    }
+    .hero-content{
+        width: 75%;
+    }
+    .hero-content h2{
+        width: 60%;
+    }
+    .hero-para{
+        font-size: 1.2rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    /* service */
+    #service{
+        margin-bottom: 150px;
+    }
+    .service-head{
+        font-size: 2.4rem;
+    }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0;
+    }
+    .card{
+        margin-left: -30px;
+    }
+    .ml{
+        margin-left: 0;
+        padding-left: 34px;
+    }
+    .input-box{
+        width: 100%;
+    }
+    #email{
+        width: 60%;
+    }
+    /* works */
+    .our-works-container{
+        margin: unset;
+    }
+    .work-head{
+        margin: 12%;
+        font-size: 2.4rem;
+    }
+    .work-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .left-work{
+        margin-top: 0;
+    }
+    .work-desc{
+        font-size: 1.2rem;
+    }
+    .work-name{
+        font-size: 1.8rem;
+    }
+    .see-more-cont{
+        justify-content: start;
+    }
+    .see-more{
+        font-size: 1.8rem;
+    }    
+    /* clients container */
+    .clients-container{
+        margin: unset;
+        margin-top: 150px;
+        flex-direction: column;
+    }
+    .clih1{
+        font-size: 1.8rem;
+    }
+    .work-head{
+        margin: 0;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    .cli-para{
+        width: 60%;
+    }
+    .client-imgs{
+        margin-top: 50px;
+        gap: 0;
+    }
+    .climg{
+        width: 80%;
+    }
+    /* contact */
+    .contact-container{
+        margin: unset;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .quote{
+        font-size: 2.4rem;
+        width: unset;
+    }
+    /* footer */
+    .footer-cont{
+        padding-left: 20px ;
+        flex-direction: column;
+    }
+    .footer-nav{
+        position: unset;
+        left: unset;
+        transition: unset;
+        top: unset;
+        background: unset;
+        height: unset;
+        width: unset;
+        justify-content: start;
+        align-items: unset;
+        margin-bottom: 64px;
+    }
+    .footer-nav li{
+        font-size: 1.8rem;
+        color: #FFFFFF;
+        text-transform: unset;
+        letter-spacing: unset;
+        margin-top: 10px;
+    }
+    .logos{
+        margin-bottom: 64px;
+    }
+    .footer-label{
+        color: #828282;
+    }
+    .footer-box{
+        width: 75%;
+    }
+    .footer-box #email{
+        width: 60%;
+    }
 }
