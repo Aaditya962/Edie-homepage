@@ -1,5 +1,4 @@
 # Edie-homepage
-# Checkout-Page
 <!-- Please update value in the {}  -->
 
 <h1 align="center">{Edie-homepage Challenge}</h1>
